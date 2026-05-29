@@ -7,7 +7,9 @@
 
 struct MoveToAlarmState: GameState {
     
-    var viewType: GameViewType { return .moveToAlarm }
+    var viewType: GameViewType {
+        return .moveToAlarm
+    }
     
     var prompts: [String]? {
         return ["나를 따라오는 발소리가 들린다.",
@@ -18,4 +20,6 @@ struct MoveToAlarmState: GameState {
     func update(game: Game, position: Position) {
         
     }
+    
+    func pause(game: Game) {}
 }

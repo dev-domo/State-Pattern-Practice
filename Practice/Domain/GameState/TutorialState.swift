@@ -7,7 +7,9 @@
 
 struct TutorialState: GameState {
     
-    var viewType: GameViewType { return .tutorial }
+    var viewType: GameViewType {
+        return .tutorial
+    }
     
     func onEnter(game: Game) {
         
@@ -18,4 +20,6 @@ struct TutorialState: GameState {
             game.changeState(MoveToAlarmState())
         }
     }
+    
+    func pause(game: Game) {}
 }
