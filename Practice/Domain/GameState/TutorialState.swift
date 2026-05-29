@@ -20,4 +20,6 @@ struct TutorialState: GameState {
             game.changeState(MoveToAlarmState())
         }
     }
+    
+    func pause(game: Game) {}
 }

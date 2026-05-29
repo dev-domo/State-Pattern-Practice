@@ -20,4 +20,6 @@ struct MoveToAlarmState: GameState {
     func update(game: Game, position: Position) {
         
     }
+    
+    func pause(game: Game) {}
 }

@@ -11,6 +11,7 @@ protocol GameState {
     
     func onEnter(game: Game)
     func update(game: Game, position: Position)
+    func pause(game: Game)
 }
 
 extension GameState {
